@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    border: border-box; 
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(95, 158, 160, 0.7);  
+    color : white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    height: 60px;
+    font-size: 40px;
+    font-family: "Oswald";
+    margin-left: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center; 
+    font-size: 25px;
+    font-family: "Oswald";
+    margin-right:40px;
+    gap: 75px;
+}
+
+.quotes-page {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.git-hub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.git-id {
+    display: inline-flex;
+    font-size: 23px;
+
+}
+
+.git-image {
+    background-image: url("gitimage.png");
+    background-size: cover;
+    width: 20px; 
+    height: 20px;
+    display: inline-block;  
+  }
