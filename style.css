@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    border: border-box; 
+    box-sizing: border-box; 
 }
 
 .navbar {
@@ -10,10 +10,11 @@
     color : white;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 .title {
-    height: 60px;
+    
     font-size: 40px;
     font-family: "Oswald";
     margin-left: 10px;
@@ -22,7 +23,7 @@
 .details {
     display: flex;
     align-items: center; 
-    font-size: 25px;
+    font-size: 27px;
     font-family: "Oswald";
     margin-right:40px;
     gap: 75px;
@@ -45,14 +46,148 @@ a {
 
 .git-id {
     display: inline-flex;
-    font-size: 23px;
-
+    font-size: 24px;
+    position: relative;
+    bottom: 1px;  
 }
 
-.git-image {
-    background-image: url("gitimage.png");
-    background-size: cover;
-    width: 20px; 
-    height: 20px;
-    display: inline-block;  
+.fa-brands fa-github {
+    width: 2px; 
+    height: 22px;
+    display: inline-block; 
+    color: black;
   }
+
+body {
+    background-image: url("https://www.pixel4k.com/wp-content/uploads/2018/10/highlights-circles-shine-4k_1539369398-2048x1152.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main_text {
+    font-family: "Share Tech Mono";
+    text-align: center;
+    font-size : 70px;
+    padding-top: 250px;
+    animation: popup 1.5s ease-out forwards;
+}
+
+.underline-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+}
+
+#underline-main {
+    border-top: solid 5px black;
+    width: 0; 
+    animation: underline_from_middle 1s 1s ease-out forwards;
+}
+
+#title-desc {
+    margin: 40px 0 50px 0;
+    font-size: 25px;
+    animation: popup 1s 2s ease-out forwards;
+    opacity: 0;
+}
+
+#title-instruction {    
+   font-size: 20px;
+   animation: popup 1s 2s ease-out forwards;
+   opacity: 0;
+}
+
+@keyframes underline_from_middle {
+    from { 
+       width: 0;
+    }
+    to {
+        width: 87%;
+}
+}
+
+@keyframes popup {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); 
+      }
+    }
+
+    @media (max-width: 950px) {
+        .navbar {
+            flex-direction: column; 
+            height: auto;
+            padding: 10px 0;
+            align-items: center;
+        }
+    
+        .details {
+            flex-direction: column; 
+            gap: 10px;
+            margin-right: 0;
+        }
+    
+        .title {
+            padding-bottom: 15px;
+        }
+        .main_text {
+            padding-top: 350px;
+            font-size: 50px;
+        }
+    
+        #title-desc, #title-instruction {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .title {
+            font-size: 30px;
+            margin: 0;
+        }
+    
+        .details {
+            font-size: 27px;
+        }
+    
+        .git-id {
+            font-size: 25px;
+        }
+        
+        .main_text {
+            font-size: 35px;
+        }
+    
+        #title-desc, #title-instruction {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .title {
+            font-size: 23px;
+            margin: 0;
+        }
+    
+        .details {
+            font-size: 20px;
+        }
+    
+        .git-id {
+            font-size: 17px;
+        }
+
+        .main_text {
+            padding-top: 300px;
+            font-size: 25px;
+        }    
+        #title-desc, #title-instruction {
+            font-size: 15px;
+        }
+    }
