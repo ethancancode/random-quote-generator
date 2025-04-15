@@ -10,20 +10,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/de2be28836.js" crossorigin="anonymous"></script>
-<body id = "happy_body">
+<body id = "funny_body">
     <nav>
         <div class="navbar">
             <div class="title">
-                <a href="index.html">RANDOM QUOTE GENERATOR</a>
+                <a>RANDOM QUOTE GENERATOR</a>
             </div>
             <div class="details">
-                <div class="home-page">
+                <div class="home-page hover-colour">
                     <a href="index.html">Home</a>
                 </div>
-                <div class="quotes-page">
-                   Quotes
-                </div>                  
-                <div class="git-hub">
+                <div class="quotes-page hover-colour">
+                    <button class="dropbtn">Quotes</button>
+                    <div class="dropdown-content">
+                        <a class ="hover-colour" href="motiv.html">Motivational</a>
+                        <a class ="hover-colour" href="sad.html">Sad</a>
+                        <a class ="hover-colour" href="funny.html">Funny</a>
+                    </div>
+                </div>                
+                <div class="git-hub hover-colour">
                     <a href="https://github.com/ethancancode" target = "_main">
                     <i class="fa-brands fa-github"></i>
                     <div class="git-id">ethancancode</div>
@@ -33,18 +38,18 @@
     </nav>
     <main>
         <div class = "main_text quote_text">
-              Happy Quotes
+              Funny Quotes
             <div class="underline-div">
                 <div class="underline_anim"></div>
             </div>
             <div id="generated_quote">
-             Click the button to generate a happy quote 
+             Click the button to generate a funny quote 
             </div>
             <div class="button_div">
                 <div class="button_container">
                    <div class="button_shadow"></div>
                    <div class="generative_button">
-                     <button id="happy_button" class ="generatebutton" > Generate</button>
+                     <button id="funny_button" class ="generatebutton" > Generate</button>
                    </div>
                 </div> 
             </div>
