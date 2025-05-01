@@ -16,6 +16,7 @@
     font-size: 40px;
     font-family: "Oswald";
     margin-left: 10px;
+    cursor: default;
 }
 
 .home-page {
@@ -117,6 +118,7 @@ body {
     font-size : 70px;
     padding-top: 200px;
     animation: popup 1.5s ease-out forwards;
+    cursor: default;
 }
 
 .underline-div {
@@ -159,7 +161,9 @@ body {
         margin: 40px 0 100px 0;
         font-size: 25px;
         animation: slide 1s 1.5s ease-out forwards;
+        pointer-events: none;   
         opacity: 0;
+        cursor: text;
     }
 
     .generatebutton {
@@ -248,12 +252,13 @@ body {
 
         @keyframes slide {
             from {
-            opacity: 0;
-            transform: translateX(-50px);
+             opacity: 0;
+             transform: translateX(-50px);
             }
             to {
-            opacity: 1;
-            transform: translateX(0); 
+             opacity: 1;
+             transform: translateX(0);
+             pointer-events: auto; 
             }
         }
         
