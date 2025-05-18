@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/de2be28836.js" crossorigin="anonymous"></script>
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/de2be28836.js" crossorigin="anonymous"></script>
-<body id = "sad_body">
+<body id="sad_body">
     <nav>
         <div class="navbar">
             <div class="title">
@@ -23,38 +23,35 @@
                 <div class="quotes-page hover-colour">
                     <button class="dropbtn">Quotes</button>
                     <div class="dropdown-content">
-                        <a class ="hover-colour" href="motiv.html">Motivational</a>
-                        <a class ="hover-colour" href="sad.html">Sad</a>
-                        <a class ="hover-colour" href="funny.html">Funny</a>
+                        <a class="hover-colour" href="motiv.html">Motivational</a>
+                        <a class="hover-colour" href="sad.html">Sad</a>
+                        <a class="hover-colour" href="funny.html">Funny</a>
                     </div>
                 </div>                
                 <div class="git-hub hover-colour">
-                    <a href="https://github.com/ethancancode" target = "_main">
-                    <i class="fa-brands fa-github"></i>
-                    <div class="git-id">ethancancode</div>
-                </a>
-            </div>                      
-        </div> 
+                    <a href="https://github.com/ethancancode" target="_main">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="git-id">ethancancode</span>
+                    </a>
+                </div>                      
+            </div> 
+        </div>
     </nav>
     <main>
-        <div class = "main_text quote_text sad_color">
-                Sad Quotes
+        <div class="main_text quote_text sad_color">
+            Sad Quotes
             <div class="underline-div">
                 <div class="underline_anim sad_color"></div>
             </div>
             <div id="generated_quote" class="sad_color">
-             Click the button to generate a sad quote 
+                Click the button to generate a sad quote
             </div>
             <div class="button_div">
-                <div class="button_container">
-                   <div class="button_shadow"></div>
-                   <div class="generative_button">
-                     <button id="sad_button" class ="generatebutton" > Generate</button>
-                   </div>
-                </div> 
-            </div> 
+                <button id="sad_button" class="generatebutton">Generate</button>
+                <button id="copy_text" class="generatebutton">Copy to clipboard</button>
+            </div>
         </div>
     </main>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

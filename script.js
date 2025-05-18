@@ -38,13 +38,21 @@
    var generatesad = document.getElementById("sad_button");
    var generatefunny = document.getElementById("funny_button");
    var quoteDiv = document.getElementById("generated_quote");
+   var copyButton = document.getElementById("copy_text");
 
    function showRandomQuote(quotes) {
     var index = Math.floor(Math.random() * quotes.length);
     quoteDiv.textContent = quotes[index];
+    copyButton.style.display = "inline-block";
 }
+
+   function copyText() {
+      navigator.clipboard.writeText(quoteDiv.textContent);
+      alert("Quote copied to keyboard!");
+   }
 
 if (generatemotiv) generatemotiv.onclick = () => showRandomQuote(motivquotes);
 if (generatesad) generatesad.onclick = () => showRandomQuote(sadquotes);
 if (generatefunny) generatefunny.onclick = () => showRandomQuote(funnyquotes);
+if (copyButton) copyButton.onclick = copyText;
 
