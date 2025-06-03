@@ -147,7 +147,7 @@ body {
 }
 
     #motiv_body {
-        background-image: url("https://evynntyler.com/wp-content/uploads/2021/11/pexels-miles-hardacre-2404371.jpg?w=2000&h=1200&crop=1");
+        background-image: url("pexels-miles-hardacre-2404371.webp");
     }
 
     .quote_text {
@@ -207,11 +207,11 @@ body {
     }
 
     #funny_body {
-        background-image: url("https://d30gl8nkrjm6kp.cloudfront.net/articulos/articulos-800574.jpg");
+        background-image: url("articulos-800574.jpg");
     }
 
     #sad_body {
-        background-image:url("https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+        background-image:url("pexels-photo-3601097.webp")
     }
 
     .sad_color {
