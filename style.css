@@ -109,7 +109,7 @@ body {
 }
 
 #main_body {
-    background-image: url("pexels-photo-255379.webp");
+    background-image: url("photos/pexels-photo-255379.webp");
 }
 
 .main_text {
@@ -147,7 +147,7 @@ body {
 }
 
     #motiv_body {
-        background-image: url("pexels-miles-hardacre-2404371.webp");
+        background-image: url("photos/pexels-miles-hardacre-2404371.webp");
     }
 
     .quote_text {
@@ -207,11 +207,11 @@ body {
     }
 
     #funny_body {
-        background-image: url("articulos-800574.jpg");
+        background-image: url("photos/articulos-800574.jpg");
     }
 
     #sad_body {
-        background-image:url("pexels-photo-3601097.webp")
+        background-image:url("photos/pexels-photo-3601097.webp")
     }
 
     .sad_color {
